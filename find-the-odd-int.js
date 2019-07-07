@@ -11,3 +11,18 @@ function findOdd(A) {
     }
   }
 }
+
+/* **
+Simplified Solutions:
+
+function findOdd(A) {
+  return A.reduce(function(c,v){return c^v;},0);
+}
+
+function findOdd(arr) {
+  return arr.find((item, index) => arr.filter(el => el == item).length % 2)
+}
+
+const findOdd = (xs) => xs.reduce((a, b) => a ^ b);
+
+** */
